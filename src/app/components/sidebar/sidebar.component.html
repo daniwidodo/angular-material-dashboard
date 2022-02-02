@@ -29,10 +29,24 @@
 
   <!-- content -->
   <div class="side-navigation-content">
-    <button type="button" mat-raised-button (click)="drawer.toggle()">
-      <mat-icon> menu </mat-icon>
-      Menu
-    </button>
+      <div class="side-navigation-header">
+        <button type="button" mat-button (click)="drawer.toggle()" >
+            <mat-icon> menu </mat-icon>
+            Menu
+          </button>
+
+          <div class="right-align-navigation">
+            <button mat-button > 
+                <mat-icon> notifications </mat-icon>
+              </button>
+          </div>
+
+          
+              
+         
+      </div>
+
     <app-header></app-header>
+    <app-dashboard></app-dashboard>
   </div>
 </mat-drawer-container>
