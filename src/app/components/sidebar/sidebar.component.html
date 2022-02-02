@@ -1,0 +1,38 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="side-navigation" mode="side" >
+      <!-- logo -->
+    <div class="organization-logo">
+      <p><strong>Bangtur</strong>studio</p>
+    </div>
+    <!-- navigation -->
+    <div class="menu-navigation">
+      <h4 class="menu-link active" (click)="click()" style="padding: 10px">
+        <mat-icon> home </mat-icon>
+        Dashboard
+      </h4>
+      <h4 class="menu-link " (click)="click()" style="padding: 10px">
+        <mat-icon> edit </mat-icon>
+        Posts
+      </h4>
+    </div>
+    <!-- footer -->
+    <div class="menu-footer" (click)="logout()">
+        <h4 class="menu-link">
+            <mat-icon>
+                logout
+            </mat-icon>
+            Logout
+        </h4>
+
+    </div>
+  </mat-drawer>
+
+  <!-- content -->
+  <div class="side-navigation-content">
+    <button type="button" mat-raised-button (click)="drawer.toggle()">
+      <mat-icon> menu </mat-icon>
+      Menu
+    </button>
+    <app-header></app-header>
+  </div>
+</mat-drawer-container>

@@ -1,0 +1,62 @@
+.container {
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
+}
+
+.side-navigation {
+  padding: 20px;
+  background-color: #14033d;
+  width: 20vw;
+  min-width: 210px;
+}
+
+.side-navigation-content {
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+p {
+  color: white;
+}
+
+.organization-logo {
+  font-size: 1.8em;
+  padding-top: 3vh;
+  padding-bottom: 40px;
+}
+
+.menu-navigation {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-link:hover {
+  background-color: #300097;
+  border-radius: 5px;
+  color: white;
+  list-style-type: none;
+  /* transition: .5s; */
+}
+
+.menu-link {
+  display: flex;  
+  padding: 5px;
+}
+
+.active {
+  border: solid white 0.5px;
+  border-radius: 5px;
+}
+
+mat-icon { 
+  padding-right: 5px;
+}
+
+.menu-footer{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    color: tomato;
+    
+}
